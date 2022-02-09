@@ -3,6 +3,7 @@
 
 /* containers */
 @import "./containers/header.css";
+@import "./containers/mobile-header.css";
 
 /* components */
 @import "./components/logo.css";
