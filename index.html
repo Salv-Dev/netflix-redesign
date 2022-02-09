@@ -14,10 +14,12 @@
             <div class="nav-btn__right"></div>
         </div>
         <div class="logo">
-            <img src="#" alt="#" class="logo__img" />
+            <div class="logo__img"></div>
         </div>
         <div class="search">
-            <div class="search__icon"></div>
+            <div class="search__icon">
+                <i data-feather="home"></i>
+            </div>
             <input type="text" class="search__input" />
             <div class="search__clear-input-btn"></div>
         </div>
@@ -31,4 +33,8 @@
         </div>
     </header>
 </body>
+<script src="./node_modules/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace();
+</script>
 </html>
