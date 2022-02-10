@@ -1,0 +1,17 @@
+.menu-btn {
+    display: flex;
+    padding: 0;
+    width: 50px;
+    border: none;
+    background: none;
+}
+
+.menu-btn:active > .menu-btn__icon,
+.menu-btn:hover > .menu-btn__icon {
+    stroke: var(--highlight-white);
+}
+
+.menu-btn > .menu-btn__icon {
+    stroke: var(--foreground-gray);
+    transition: stroke .2s ease-in-out;
+}
