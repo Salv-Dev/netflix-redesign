@@ -4,6 +4,10 @@
 /* containers */
 @import "./containers/header.css";
 @import "./containers/mobile-header.css";
+@import "./containers/main.css";
+@import "./containers/groups.css";
+@import "./containers/watching.css";
+@import "./containers/releases.css";
 
 /* components */
 @import "./components/logo.css";
@@ -12,3 +16,6 @@
 @import "./components/search.css";
 @import "./components/user.css";
 @import "./components/menu-btn.css";
+@import "./components/banner.css";
+@import "./components/social-card.css";
+@import "./components/movie-card.css";
