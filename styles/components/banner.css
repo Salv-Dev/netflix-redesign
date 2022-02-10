@@ -1,0 +1,147 @@
+.banner {
+    position: relative;
+    height: 200px;
+    border-radius: 20px;
+    overflow-y: hidden;
+}
+
+.banner__img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.banner__infos {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.banner__info-group {
+    display: flex;
+    align-items: center;
+}
+
+.banner__xp {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.banner__xp-text {
+    color: var(--highlight-text);
+    font-size: 0.7rem;
+}
+
+.banner__friends-watching {
+    display: flex;
+    align-items: center;
+}
+
+.banner__friend-avatar {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.banner__friend-avatar:nth-child(1) {
+    background: url("https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__friend-avatar:nth-child(2) {
+    background: url("https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: -5px;
+}
+
+.banner__friend-avatar:nth-child(3) {
+    background: url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: -5px;
+}
+
+.banner__more-friends-watching {
+    margin-left: 10px;
+    color: var(--highlight-text);
+    font-size: 0.8rem;
+}
+
+.banner__info-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.banner__movie-name {
+    font-size: 1.5rem;
+    color: var(--highlight-text);
+    font-weight: bold;
+}
+
+.banner__movie-desc {
+    font-size: 0.8rem;
+    color: var(--highlight-text);
+    margin-top: 10px;
+}
+
+.banner__movie-year {
+    border: 1px solid var(--highlight-text);
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.banner__circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--highlight-white);
+    margin: 2px 5px;
+    border-radius: 50%;
+}
+
+.banner__movie-time {
+    display: block;
+    margin-top: 5px;
+}
+
+.banner__movie-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner__play-movie-btn {
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    background-color: var(--highlight-red);
+    color: var(--highlight-text);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
+    -webkit-box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
+    -moz-box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
+}
+
+.banner__add-movie-watchlist-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--highlight-text);
+    border-radius: 12px;
+}
