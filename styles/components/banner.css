@@ -135,6 +135,13 @@
     box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
     -webkit-box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
     -moz-box-shadow: 1px 1px 27px -1px rgba(255,22,22,0.75);
+    transition: box-shadow .2s ease-in-out;
+}
+
+.banner__play-movie-btn:hover {
+    box-shadow: 1px 1px 27px 5px rgba(255,22,22,0.75);
+    -webkit-box-shadow: 1px 1px 27px 5px rgba(255,22,22,0.75);
+    -moz-box-shadow: 1px 1px 27px 5px rgba(255,22,22,0.75);
 }
 
 .banner__add-movie-watchlist-btn {
@@ -144,4 +151,10 @@
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--highlight-text);
     border-radius: 12px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.banner__add-movie-watchlist-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
