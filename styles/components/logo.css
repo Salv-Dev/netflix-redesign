@@ -4,7 +4,7 @@
     flex: 1;
 }
 
-.logo > .logo__img {
+.logo__img {
     width: 22px;
     height: 40px;
     background: url("./../../img/logoN.png") no-repeat;

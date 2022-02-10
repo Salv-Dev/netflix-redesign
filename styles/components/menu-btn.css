@@ -11,7 +11,8 @@
     stroke: var(--highlight-white);
 }
 
-.menu-btn > .menu-btn__icon {
+.menu-btn__icon {
     stroke: var(--foreground-gray);
     transition: stroke .2s ease-in-out;
+    cursor: pointer;
 }

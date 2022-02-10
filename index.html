@@ -8,11 +8,9 @@
     <title>Netflix</title>
 </head>
 <body>
+    <!-- header -->
     <header class="header">
-        <div class="nav-btn">
-            <div class="nav-btn__left"></div>
-            <div class="nav-btn__right"></div>
-        </div>
+        <!-- mobile header -->
         <div class="mobile-header">
             <button class="menu-btn">
                 <i data-feather="menu" class="menu-btn__icon"></i>
@@ -26,12 +24,19 @@
                 </div>
             </div>
         </div>
+        <!-- desktop header -->
+        <div class="nav-btn">
+            <div class="nav-btn__left"></div>
+            <div class="nav-btn__right"></div>
+        </div>
         <div class="search">
-            <div class="search__icon">
-                <i data-feather="home"></i>
-            </div>
-            <input type="text" class="search__input" />
-            <div class="search__clear-input-btn"></div>
+            <button class="search__btn">
+                <i data-feather="search" class="search__search-icon"></i>
+            </button>
+            <input type="text" class="search__input" placeholder="Buscar..." />
+            <button class="search__clear-input-btn">
+                <i data-feather="x-circle" class="search__clear-input-btn-icon"></i>
+            </button>
         </div>
         <div class="notification">
             <div class="notification__notification-btn"></div>

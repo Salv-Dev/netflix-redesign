@@ -5,14 +5,15 @@
     width: 50px;
 }
 
-.notification .notification__notification-btn:active .notification__icon,
-.notification .notification__notification-btn:hover .notification__icon {
+.notification__notification-btn:active .notification__icon,
+.notification__notification-btn:hover .notification__icon {
     stroke: var(--highlight-white);
 }
 
-.notification .notification__notification-btn  .notification__icon  {
+.notification__icon  {
     width: 18px;
     height: 18px;
     stroke: var(--foreground-gray);
     transition: stroke .2s ease-in-out;
+    cursor: pointer;
 }
