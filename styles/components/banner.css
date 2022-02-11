@@ -1,6 +1,7 @@
 .banner {
     position: relative;
     height: 200px;
+    margin: 0 20px;
     border-radius: 20px;
     overflow-y: hidden;
 }

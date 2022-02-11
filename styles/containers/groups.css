@@ -1,0 +1,17 @@
+.groups {
+    margin-top: 25px;
+}
+
+.groups__name {
+    font-size: 1.2rem;
+    color: var(--highlight-text);
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.groups__wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px;
+}
