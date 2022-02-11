@@ -1,0 +1,8 @@
+.footer {
+    padding: 40px;
+}
+
+.footer__text {
+    color: var(--foreground-gray);
+    text-align: center;
+}

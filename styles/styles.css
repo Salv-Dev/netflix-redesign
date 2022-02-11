@@ -8,6 +8,7 @@
 @import "./containers/slider.css";
 @import "./containers/watching.css";
 @import "./containers/releases.css";
+@import "./containers/footer.css";
 
 /* components */
 @import "./components/logo.css";
