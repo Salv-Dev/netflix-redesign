@@ -1,15 +1,15 @@
-.groups {
+.slider {
     margin-top: 25px;
 }
 
-.groups__name {
+.slider__name {
     font-size: 1.2rem;
     color: var(--highlight-text);
     margin-bottom: 5px;
     padding: 0 20px;
 }
 
-.groups__wrapper {
+.slider__wrapper {
     display: flex;
     gap: 20px;
     overflow-x: scroll;

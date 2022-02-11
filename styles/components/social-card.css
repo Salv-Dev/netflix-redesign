@@ -1,7 +1,83 @@
 .social-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-width: 200px;
-    height: 125px;
+    height: 150px;
     background-color: var(--background-black);
     box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.2);
     border-radius: 20px;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.social-card:hover {
+    transform: scale(1.1);
+}
+
+.social-card__info-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.social-card__movie {
+    width: 45px;
+    height: 45px;
+    background: url("https://t.ctcdn.com.br/GcgY7EqXA7BmHpl8WSW-z5Zp3H0=/354x3095:5816x6170/512x288/smart/i526811.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.social-card__friends {
+    position: relative;
+    left: -40px;
+    width: 25px;
+    height: 25px;
+    background: url("https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.social-card__friends::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -30px;
+    background: url("https://images.pexels.com/photos/837306/pexels-photo-837306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.social-card__friends::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -50px;
+    background: url("https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.social-card__info-movie {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 20px 20px;
+}
+
+.social-card__movie-name {
+    color: var(--highlight-text);
+    margin-bottom: 5px;
+}
+
+.social-card__movie-year {
+    color: var(--foreground-gray);
 }
