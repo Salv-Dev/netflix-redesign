@@ -33,7 +33,7 @@
 @media screen and (min-width: 1024px) {
     .nav {
         display: block;
-        width: 300px;
+        width: 250px;
     }
 
     .nav__close-btn {
@@ -41,7 +41,7 @@
     }
 
     .nav-background {
-        width: 300px;
+        width: 250px;
         height: 100vh;
     }
 }

@@ -1,0 +1,110 @@
+.social {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: var(--foreground-black);
+    z-index: 2;
+}
+
+.social__friends {
+    width: 100%;
+    position: relative;
+}
+
+.social__expand-btn {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: var(--foreground-black);
+    border-radius: 15px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.social__expand-btn-icon {
+    margin-top: -20px;
+    stroke: var(--foreground-gray);
+}
+
+.social__friends-container {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-around;
+    background-color: var(--foreground-black);
+}
+
+.social__friend-img,
+.social__add-friend {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social__add-friend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlight-red);
+}
+
+.social__add-friend-icon {
+    stroke: var(--highlight-white);
+}
+
+.social__friend-img:nth-child(2) {
+    background: url("https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social__friend-img:nth-child(3) {
+    background: url("https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social__friend-img:nth-child(4) {
+    background: url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social__friend-img:nth-child(5) {
+    background: url("https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .social {
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 100vh;
+    }
+
+    .social__friends-container {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .social__expand-btn {
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        left: -75px;
+        transform: rotate(-90deg);
+    }
+}
