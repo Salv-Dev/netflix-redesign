@@ -43,3 +43,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@media screen and (min-width: 1024px) {
+	body {
+		display: flex;
+	}
+
+	.container {
+		flex: 1;
+		border-left: 1px solid var(--secondary-text);
+	}
+}

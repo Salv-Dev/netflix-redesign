@@ -2,3 +2,9 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .mobile-header {
+        display: none;
+    }
+}

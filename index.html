@@ -8,46 +8,8 @@
     <title>Netflix</title>
 </head>
 <body>
-    <!-- header -->
-    <header class="header">
-        <!-- mobile header -->
-        <div class="mobile-header">
-            <button class="menu-btn">
-                <i data-feather="menu" class="menu-btn__icon"></i>
-            </button>
-            <div class="logo">
-                <div class="logo__img"></div>
-            </div>
-            <div class="notification">
-                <div class="notification__notification-btn">
-                    <i data-feather="bell" class="notification__icon"></i>
-                </div>
-            </div>
-        </div>
-        <!-- desktop header -->
-        <div class="nav-btn">
-            <div class="nav-btn__left"></div>
-            <div class="nav-btn__right"></div>
-        </div>
-        <div class="search">
-            <button class="search__btn">
-                <i data-feather="search" class="search__search-icon"></i>
-            </button>
-            <input type="text" class="search__input" placeholder="Buscar..." />
-            <button class="search__clear-input-btn">
-                <i data-feather="x-circle" class="search__clear-input-btn-icon"></i>
-            </button>
-        </div>
-        <div class="notification">
-            <div class="notification__notification-btn"></div>
-            <div class="notification__chat-btn"></div>
-        </div>
-        <div class="user">
-            <div class="user__avatar"></div>
-            <div class="user__infos"></div>
-        </div>
-    </header>
     <!-- menu-->
+    <div class="nav-background"></div>
     <nav class="nav">
         <button class="nav__close-btn">
             <i data-feather="x" class="nav__close-btn-icon"></i>
@@ -101,194 +63,242 @@
             </ul>
         </div>
     </nav>
-    <!-- main -->
-    <main class="main">
-        <!-- movie banner -->
-        <section class="banner">
-            <img src="https://images2.alphacoders.com/109/thumb-350-1098618.jpg" alt="" class="banner__img" />
-            <div class="banner__infos">
-                <div class="banner__info-group">
-                    <div class="banner__xp">
-                        <p class="banner__xp-text">50XP</p>
-                    </div>
-                    <div class="banner__friends-watching">
-                        <div class="banner__friend-avatar"></div>
-                        <div class="banner__friend-avatar"></div>
-                        <div class="banner__friend-avatar"></div>
-                        <p class="banner__more-friends-watching">
-                            +5 amigos estão assistindo.
-                        </p>
-                    </div>
+    <!-- header -->
+    <div class="container">
+
+        <header class="header">
+            <!-- mobile header -->
+            <div class="mobile-header">
+                <button class="menu-btn">
+                    <i data-feather="menu" class="menu-btn__icon"></i>
+                </button>
+                <div class="logo">
+                    <div class="logo__img"></div>
                 </div>
-                <div class="banner__info-movie">
-                    <h1 class="banner__movie-name">Duna</h1>
-                    <p class="banner__movie-desc">
-                        <span class="banner__movie-year">2021</span>
-                        <span class="banner__circle"></span>
-                        <span>Ficção Científica | Avantura</span>
-                        <span class="banner__movie-time">2h35m</span>
-                    </p>
-                </div>
-                <div class="banner__movie-control">
-                    <button class="banner__play-movie-btn">
-                        Assistir
-                    </button>
-                    <button class="banner__add-movie-watchlist-btn">
-                        <i data-feather="plus" class="banner__add-movie-watchlist-icon"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <!-- social groups -->
-        <section class="slider">
-            <h2 class="slider__name">Grupos</h2>
-            <div class="slider__wrapper">
-                <div class="social-card">
-                    <div class="social-card__info-group">
-                        <div class="social-card__movie"></div>
-                        <div class="social-card__friends"></div>
-                    </div>
-                    <div class="social-card__info-movie">
-                        <h3 class="social-card__movie-name">Homem-aranha: Se...</h3>
-                        <p class="social-card__movie-year">2021</p>
-                    </div>
-                </div>
-                <div class="social-card">
-                    <div class="social-card__info-group">
-                        <div class="social-card__movie"></div>
-                        <div class="social-card__friends"></div>
-                    </div>
-                    <div class="social-card__info-movie">
-                        <h3 class="social-card__movie-name">Homem-aranha: Se...</h3>
-                        <p class="social-card__movie-year">2021</p>
+                <div class="notification">
+                    <div class="notification__notification-btn">
+                        <i data-feather="bell" class="notification__icon"></i>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- continue watching -->
-        <section class="slider">
-            <h2 class="slider__name">Continue assistindo</h2>
-            <div class="slider__wrapper">
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
+            <!-- desktop header -->
+            <div class="navigation-btn">
+                <div class="navigation-btn__left"></div>
+                <div class="navigation-btn__right"></div>
+            </div>
+            <div class="search">
+                <button class="search__btn">
+                    <i data-feather="search" class="search__search-icon"></i>
+                </button>
+                <input type="text" class="search__input" placeholder="Buscar..." />
+                <button class="search__clear-input-btn">
+                    <i data-feather="x-circle" class="search__clear-input-btn-icon"></i>
+                </button>
+            </div>
+            <div class="notification">
+                <div class="notification__notification-btn">
+                    <i data-feather="bell" class="notification__icon"></i>
                 </div>
             </div>
-        </section>
-        <!-- movie releases -->
-        <section class="slider">
-            <h2 class="slider__name">Lançamentos</h2>
-            <div class="slider__wrapper">
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
+            <div class="perfil">
+                <div class="perfil__avatar">
+                    <div class="perfil__avatar2"></div>
                 </div>
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-card__img-wrapper">
-                        <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
-                        <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
-                    </div>
-                    <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
-                    <div class="movie-card__description">
-                        <h2 class="movie-card__movie-name">Duna</h2>
-                        <p class="movie-card__movie-info">
-                            <span class="movie-card__movie-year">2021</span>
-                            <span class="movie-card__movie-circle"></span>
-                            <span class="movie-card__movie-cat">Sci fi | Aventura</span>
-                            <span class="movie-card__movie-time">2h35m</span>
-                        </p>
-
-                        <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
-                    </div>
+                <div class="perfil__info">
+                    <p class="perfil__name">Lorem Ipsum</p>
+                    <p class="perfil__level">Level 7</p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p class="footer__text">Netflix redesign.</p>
-    </footer>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <!-- movie banner -->
+            <section class="banner">
+                <img src="https://images2.alphacoders.com/109/thumb-350-1098618.jpg" alt="" class="banner__img" />
+                <div class="banner__infos">
+                    <div class="banner__info-group">
+                        <div class="banner__xp">
+                            <p class="banner__xp-text">50XP</p>
+                        </div>
+                        <div class="banner__friends-watching">
+                            <div class="banner__friend-avatar"></div>
+                            <div class="banner__friend-avatar"></div>
+                            <div class="banner__friend-avatar"></div>
+                            <p class="banner__more-friends-watching">
+                                +5 amigos estão assistindo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="banner__info-movie">
+                        <h1 class="banner__movie-name">Duna</h1>
+                        <p class="banner__movie-desc">
+                            <span class="banner__movie-year">2021</span>
+                            <span class="banner__circle"></span>
+                            <span>Ficção Científica | Avantura</span>
+                            <span class="banner__movie-time">2h35m</span>
+                        </p>
+                    </div>
+                    <div class="banner__movie-control">
+                        <button class="banner__play-movie-btn">
+                            Assistir
+                        </button>
+                        <button class="banner__add-movie-watchlist-btn">
+                            <i data-feather="plus" class="banner__add-movie-watchlist-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- social groups -->
+            <section class="slider">
+                <h2 class="slider__name">Grupos</h2>
+                <div class="slider__wrapper">
+                    <div class="social-card">
+                        <div class="social-card__info-group">
+                            <div class="social-card__movie"></div>
+                            <div class="social-card__friends"></div>
+                        </div>
+                        <div class="social-card__info-movie">
+                            <h3 class="social-card__movie-name">Homem-aranha: Se...</h3>
+                            <p class="social-card__movie-year">2021</p>
+                        </div>
+                    </div>
+                    <div class="social-card">
+                        <div class="social-card__info-group">
+                            <div class="social-card__movie"></div>
+                            <div class="social-card__friends"></div>
+                        </div>
+                        <div class="social-card__info-movie">
+                            <h3 class="social-card__movie-name">Homem-aranha: Se...</h3>
+                            <p class="social-card__movie-year">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- continue watching -->
+            <section class="slider">
+                <h2 class="slider__name">Continue assistindo</h2>
+                <div class="slider__wrapper">
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- movie releases -->
+            <section class="slider">
+                <h2 class="slider__name">Lançamentos</h2>
+                <div class="slider__wrapper">
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-card__img-wrapper">
+                            <div class="movie-card__movie-xp"><p class="movie-card__xp-text">10XP</p></div>
+                            <img class="movie-card__img" src="https://cdn.vox-cdn.com/thumbor/SKkdsGMnm9J9jkys0SLQ25UGoE0=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21864674/chalamet_zendaya_dune_photo.jpeg" ></img>
+                        </div>
+                        <div class="movie-card__play-bar"><div class="movie-card__play-bar-2"></div></div>
+                        <div class="movie-card__description">
+                            <h2 class="movie-card__movie-name">Duna</h2>
+                            <p class="movie-card__movie-info">
+                                <span class="movie-card__movie-year">2021</span>
+                                <span class="movie-card__movie-circle"></span>
+                                <span class="movie-card__movie-cat">Sci fi | Aventura</span>
+                                <span class="movie-card__movie-time">2h35m</span>
+                            </p>
+    
+                            <p class="movie-card__movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, iusto quae...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Netflix redesign.</p>
+        </footer>
+    </div>
 </body>
 <script src="./node_modules/feather-icons/dist/feather.min.js"></script>
 <script>

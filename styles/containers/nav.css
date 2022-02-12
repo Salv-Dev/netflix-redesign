@@ -29,3 +29,19 @@
     stroke: var(--highlight-text);
     transition: stroke .2s ease-in-out;
 }
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        display: block;
+        width: 300px;
+    }
+
+    .nav__close-btn {
+        display: none;
+    }
+
+    .nav-background {
+        width: 300px;
+        height: 100vh;
+    }
+}
