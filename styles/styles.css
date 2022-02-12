@@ -9,6 +9,7 @@
 @import "./containers/watching.css";
 @import "./containers/releases.css";
 @import "./containers/footer.css";
+@import "./containers/nav.css";
 
 /* components */
 @import "./components/logo.css";
@@ -20,3 +21,5 @@
 @import "./components/banner.css";
 @import "./components/social-card.css";
 @import "./components/movie-card.css";
+@import "./components/perfil.css";
+@import "./components/menu.css";

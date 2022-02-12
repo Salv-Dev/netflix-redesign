@@ -49,12 +49,57 @@
     </header>
     <!-- menu-->
     <nav class="nav">
+        <button class="nav__close-btn">
+            <i data-feather="x" class="nav__close-btn-icon"></i>
+        </button>
         <div class="perfil">
-            <div class="perfil__avatar"></div>
-            <div class="perfil__name"></div>
-            <div class="perfil__level"></div>
+            <div class="perfil__avatar">
+                <div class="perfil__avatar2"></div>
+            </div>
+            <div class="perfil__info">
+                <p class="perfil__name">Lorem Ipsum</p>
+                <p class="perfil__level">Level 7</p>
+            </div>
         </div>
-        <ul class="menu"></ul>
+        <div class="menu">
+            <ul class="menu__info">
+                <h3 class="menu__title">Menu</h3>
+                <li class="menu__li menu__li--active">
+                    <i data-feather="home" class="menu__li-icon menu__li-icon--active"></i>
+                    <p class="menu__li-text menu__li-text--active">Home</p>
+                </li>
+                <li class="menu__li">
+                    <i data-feather="clock" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Assistir mais tarde</p>
+                </li>
+                <li class="menu__li">
+                    <i data-feather="calendar" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Em breve</p>
+                </li>
+            </ul>
+            <ul class="menu__info">
+                <h3 class="menu__title">Social</h3>
+                <li class="menu__li">
+                    <i data-feather="user" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Amigos</p>
+                </li>
+                <li class="menu__li">
+                    <i data-feather="users" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Grupos</p>
+                </li>
+            </ul>
+            <ul class="menu__info">
+                <h3 class="menu__title">Geral</h3>
+                <li class="menu__li">
+                    <i data-feather="settings" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Configurações</p>
+                </li>
+                <li class="menu__li">
+                    <i data-feather="log-out" class="menu__li-icon"></i>
+                    <p class="menu__li-text">Log out</p>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- main -->
     <main class="main">

@@ -1,0 +1,40 @@
+.perfil {
+    display: flex;
+    padding: 40px;
+}
+
+.perfil__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--highlight-red);
+    border-radius: 50%;
+}
+
+.perfil__avatar2 {
+    width: 50px;
+    height: 50px;
+    background: url("https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.perfil__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.perfil__name {
+    color: var(--highlight-text);
+    font-weight: bold;
+}
+
+.perfil__level {
+    color: var(--foreground-gray);
+}

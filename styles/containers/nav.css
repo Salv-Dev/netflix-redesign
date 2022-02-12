@@ -1,0 +1,31 @@
+.nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-black);
+    z-index: 1;
+}
+
+.nav__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav__close-btn-icon:active,
+.nav__close-btn-icon:hover {
+    stroke: var(--highlight-red);
+}
+
+.nav__close-btn-icon {
+    stroke: var(--highlight-text);
+    transition: stroke .2s ease-in-out;
+}
