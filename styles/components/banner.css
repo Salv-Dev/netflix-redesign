@@ -159,3 +159,23 @@
 .banner__add-movie-watchlist-btn:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (min-width: 560px) {
+    .banner {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner__infos {
+        padding: 40px;
+    }
+
+    .banner__info-movie {
+        margin-bottom: 40px;
+    }
+}
