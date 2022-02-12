@@ -1,3 +1,29 @@
-.nav-btn {
-    display: block;
+
+@media screen and (min-width: 1024px) {
+    .navigation-btn {
+        display: flex;
+        gap: 5px;
+        width: 70px;
+        margin-left: -15px;
+    }
+
+    .navigation-btn__left,
+    .navigation-btn__right {
+        width: 25px;
+        height: 25px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .navigation-btn__left-icon,
+    .navigation-btn__right-icon {
+        stroke: var(--foreground-gray);
+        transition: stroke .2s ease-in-out;
+    }
+
+    .navigation-btn__left-icon:hover,
+    .navigation-btn__right-icon:hover {
+        stroke: var(--highlight-text);
+    }
 }

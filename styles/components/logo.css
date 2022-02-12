@@ -10,3 +10,17 @@
     background: url("./../../img/logoN.png") no-repeat;
     background-size: contain;
 }
+
+@media screen and (min-width: 1024px) {
+    .logo-desktop {
+        display: flex;
+        padding: 40px 40px 20px 30px;
+    }
+
+    .logo-desktop__img {
+        width: 150px;
+        height: 70px;
+        background: url("./../../img/logoNetflix.png") no-repeat;
+        background-size: contain;
+    }
+}

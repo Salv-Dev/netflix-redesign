@@ -14,7 +14,10 @@
         <button class="nav__close-btn">
             <i data-feather="x" class="nav__close-btn-icon"></i>
         </button>
-        <div class="perfil">
+        <div class="logo-desktop">
+            <div class="logo-desktop__img"></div>
+        </div>
+        <div class="perfil perfil--display-none">
             <div class="perfil__avatar">
                 <div class="perfil__avatar2"></div>
             </div>
@@ -82,31 +85,42 @@
                 </div>
             </div>
             <!-- desktop header -->
-            <div class="navigation-btn">
-                <div class="navigation-btn__left"></div>
-                <div class="navigation-btn__right"></div>
-            </div>
-            <div class="search">
-                <button class="search__btn">
-                    <i data-feather="search" class="search__search-icon"></i>
-                </button>
-                <input type="text" class="search__input" placeholder="Buscar..." />
-                <button class="search__clear-input-btn">
-                    <i data-feather="x-circle" class="search__clear-input-btn-icon"></i>
-                </button>
-            </div>
-            <div class="notification">
-                <div class="notification__notification-btn">
-                    <i data-feather="bell" class="notification__icon"></i>
+            <div class="desktop-header">
+                <div class="navigation-btn">
+                    <button class="navigation-btn__left">
+                        <i data-feather="chevron-left" class="navigation-btn__left-icon"></i>
+                    </button>
+                    <button class="navigation-btn__right">
+                        <i data-feather="chevron-right" class="navigation-btn__right-icon"></i>
+                    </button>
                 </div>
-            </div>
-            <div class="perfil">
-                <div class="perfil__avatar">
-                    <div class="perfil__avatar2"></div>
+                <div class="search">
+                    <button class="search__btn">
+                        <i data-feather="search" class="search__search-icon"></i>
+                    </button>
+                    <input type="text" class="search__input" placeholder="Buscar..." />
+                    <button class="search__clear-input-btn">
+                        <i data-feather="x-circle" class="search__clear-input-btn-icon"></i>
+                    </button>
                 </div>
-                <div class="perfil__info">
-                    <p class="perfil__name">Lorem Ipsum</p>
-                    <p class="perfil__level">Level 7</p>
+                <div class="user-container">
+                    <div class="notification notification--desktop">
+                        <div class="notification__notification-btn">
+                            <i data-feather="bell" class="notification__icon"></i>
+                        </div>
+                        <div class="notification__notification-btn">
+                            <i data-feather="message-circle" class="notification__icon"></i>
+                        </div>
+                    </div>
+                    <div class="perfil perfil--desktop">
+                        <div class="perfil__avatar">
+                            <div class="perfil__avatar2"></div>
+                        </div>
+                        <div class="perfil__info">
+                            <p class="perfil__name">Lorem Ipsum</p>
+                            <p class="perfil__level">Level 7</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

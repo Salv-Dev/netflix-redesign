@@ -1,0 +1,25 @@
+
+.desktop-header > .navigation-btn,
+.desktop-header > .notification,
+.desktop-header > .perfil {
+    display: none;
+}
+
+@media screen and (min-width: 1024px)   {
+    .desktop-header > .navigation-btn,
+    .desktop-header > .notification,
+    .desktop-header > .perfil {
+        display: block;
+    }
+
+    .desktop-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-container {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+}

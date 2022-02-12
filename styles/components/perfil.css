@@ -3,6 +3,14 @@
     padding: 40px;
 }
 
+.perfil--desktop {
+    display: none;
+}
+
+.perfil--display-none {
+    display: none
+}
+
 .perfil__avatar {
     display: flex;
     justify-content: center;
@@ -37,4 +45,15 @@
 
 .perfil__level {
     color: var(--foreground-gray);
+}
+
+@media screen and (min-width: 1024px) {
+    .perfil--desktop {
+        display: flex;
+    }
+
+    .perfil {
+        padding: 0;
+        
+    }
 }

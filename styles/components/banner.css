@@ -179,3 +179,9 @@
         margin-bottom: 40px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        margin: 0 40px;
+    }
+}
