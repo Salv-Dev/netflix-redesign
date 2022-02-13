@@ -6,3 +6,9 @@
     color: var(--foreground-gray);
     text-align: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding: 40px;
+    }
+}

@@ -32,16 +32,12 @@
 
 @media screen and (min-width: 1024px) {
     .nav {
+        grid-area: nav;
         display: block;
         width: 250px;
     }
 
     .nav__close-btn {
         display: none;
-    }
-
-    .nav-background {
-        width: 250px;
-        height: 100vh;
     }
 }

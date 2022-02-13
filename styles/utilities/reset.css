@@ -24,6 +24,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+:root {
+	font-size: 14px;
+}
+
 body {
 	line-height: 1;
     background-color: var(--background-black);
@@ -47,11 +52,14 @@ table {
 
 @media screen and (min-width: 1024px) {
 	body {
-		display: flex;
+		display: grid;
+		grid-template-columns: 250px minmax(0, 1fr);
+		grid-template-areas: 'nav container'
+							'nav container';
 	}
 
 	.container {
-		flex: 1;
+		grid-area: container;
 		border-left: 1px solid var(--secondary-text);
 	}
 }

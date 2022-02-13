@@ -1,6 +1,5 @@
 .slider {
     margin-top: 25px;
-    cursor: grab;
 }
 
 .slider__name {
@@ -13,8 +12,9 @@
 .slider__wrapper {
     display: flex;
     gap: 20px;
-    overflow-x: scroll;
+    overflow: auto;
     padding: 20px;
+    cursor: grab;
 }
 
 .slider__wrapper::-webkit-scrollbar {
@@ -37,6 +37,6 @@
     }
 
     .slider__wrapper {
-        padding: 20px 40px;
+        padding: 20px 110px 20px 40px;
     }
 }
