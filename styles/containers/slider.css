@@ -1,5 +1,6 @@
 .slider {
     margin-top: 25px;
+    cursor: grab;
 }
 
 .slider__name {
@@ -14,6 +15,20 @@
     gap: 20px;
     overflow-x: scroll;
     padding: 20px;
+}
+
+.slider__wrapper::-webkit-scrollbar {
+    width: 12px;
+    height: 7px;
+}
+  
+.slider__wrapper::-webkit-scrollbar-track {
+    background: var(--background-black);
+}
+  
+.slider__wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--foreground-black);
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 1024px) {

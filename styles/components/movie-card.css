@@ -1,14 +1,20 @@
 .movie-card {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 210px;
+    max-width: 210px;
     background-color: var(--background-black);
     box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.4);
     border-radius: 20px;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
 }
 
 .movie-card__img-wrapper {
     position: relative;
-    height: 115px;
+    height: 130px;
 }
 
 .movie-card__img {
@@ -63,8 +69,10 @@
 }
 
 .movie-card__movie-year {
+    display: inline-block;
     border: 1px solid var(--foreground-gray);
     padding: 0 5px;
+    margin-bottom: 5px;
 }
 
 .movie-card__movie-circle {
